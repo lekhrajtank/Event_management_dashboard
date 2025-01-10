@@ -1,0 +1,14 @@
+/* Global Styles (global.css) */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+}
+
+#root {
+  height: 100%; /* Make sure the root container takes full height */
+  display: flex;
+  flex-direction: column; /* Allow pages to stack vertically */
+}

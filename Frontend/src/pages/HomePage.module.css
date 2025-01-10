@@ -1,0 +1,105 @@
+/* General Styling */
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Links Container */
+.linksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Link Card Styling */
+.linkCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.linkCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Container */
+.iconContainer {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.linkCard h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.linkCard p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .linksContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .linkCard {
+        padding: 15px;
+    }
+
+    .linkCard h3 {
+        font-size: 1.3rem;
+    }
+
+    .linkCard p {
+        font-size: 0.9rem;
+    }
+}

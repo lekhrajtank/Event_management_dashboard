@@ -1,0 +1,149 @@
+/* General Page Styling */
+.attendeePage {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    flex-direction: column;   /* Stack items vertically (column) */
+    min-height: 100vh;         /* Full height of the viewport */
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Header Section */
+.attendeeHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.attendeeHeader h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.attendeeHeader p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Attendee Form Styling */
+.attendeeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;    /* Maximum width for the form */
+    margin-bottom: 30px; /* Space between form and list */
+}
+
+/* Input and Button Styling */
+.attendeeForm input,
+.attendeeForm button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.attendeeForm input {
+    background: #f9f9f9;
+}
+
+.attendeeForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.attendeeForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Attendee List Styling */
+.attendeeList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Single Attendee Item */
+.attendeeItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attendeeItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.attendeeItem h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.attendeeItem p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.removeButton {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attendeeHeader h1 {
+        font-size: 2rem;
+    }
+
+    .attendeeHeader p {
+        font-size: 1rem;
+    }
+
+    .attendeeForm,
+    .attendeeList {
+        width: 90%;
+    }
+
+    .attendeeItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .removeButton {
+        align-self: flex-end;
+    }
+}

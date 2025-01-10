@@ -1,0 +1,149 @@
+/* General Page Styling */
+.eventPage {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    flex-direction: column;   /* Stack items vertically */
+    min-height: 100vh;         /* Full height of the viewport */
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Header Section */
+.eventHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.eventHeader h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.eventHeader p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Event Form Styling */
+.eventForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;    /* Maximum width for the form */
+    margin-bottom: 30px; /* Space between form and event list */
+}
+
+/* Input and Button Styling */
+.eventForm input,
+.eventForm button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.eventForm input {
+    background: #f9f9f9;
+}
+
+.eventForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.eventForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Event List Styling */
+.eventList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Single Event Item */
+.eventItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eventItem h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.eventItem p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.removeButton {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eventHeader h1 {
+        font-size: 2rem;
+    }
+
+    .eventHeader p {
+        font-size: 1rem;
+    }
+
+    .eventForm,
+    .eventList {
+        width: 90%;
+    }
+
+    .eventItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .removeButton {
+        align-self: flex-end;
+    }
+}
